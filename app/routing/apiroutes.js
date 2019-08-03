@@ -1,6 +1,6 @@
-var path = require("path");
+const path = require("path");
 
-var friendData = require("../data/friends");
+const friendData = require("../data/friends");
 
 module.exports = function(app) {
 
@@ -9,6 +9,11 @@ app.get("/api/friends", function(req, res) {
 })
 
 app.post("/api/tables", function(req, res) {
-    req.sendFile(path.join())
+    
+    if (friendData) {
+
+    }
+
 })
+
 }

@@ -1,10 +1,10 @@
 
 // Here are my paths 
-var express = require("express")
+const express = require("express")
 
 //here's how we start the express app
-var app = express()
-var PORT = process.env.PORT || 3000
+const app = express()
+const PORT = process.env.PORT || 3000
 
 //this is for data parsing
 app.use(express.urlencoded({ extended: true }));
