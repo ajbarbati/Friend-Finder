@@ -11,8 +11,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //grabs the routes
-require("./app/routing/apiroutes")(app);
-require("./app/routing/htmlRoutes")(app);
+require("./app/routing/apiroutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
 
 //starts up the server
 app.listen(PORT, function() {
